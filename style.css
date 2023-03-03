@@ -1,0 +1,75 @@
+.container1{
+    width: 150px !important;
+
+}
+.rating-wrapper{
+    direction: rtl;
+}
+
+.rating-wrapper label{
+    display: inline-block;
+    width: 130px;
+    position: relative;
+    cursor: pointer;
+    width: 25px;
+    color: rgb(176, 196, 214);
+    
+}
+
+.rating-wrapper label::before{
+    content: "\2605";
+    position: relative;
+    font-size: 32px;
+    display: inline-block;
+    top: 0;
+    left: 0;
+
+}
+.rating-wrapper input{
+    display: none;
+}
+
+
+.rating-wrapper label:after{
+content: "\2605";
+position: absolute;
+font-size: 32px;
+display: inline-block;
+top: 0;
+left: 0;
+color: yellow;
+opacity: 0;
+
+}
+
+.rating-wrapper label:hover:after{
+opacity: 1;
+color: yellow;
+}
+
+.rating-wrapper label:hover ~ label:after{
+opacity: 1;
+color: yellow;
+}
+
+.rating-wrapper input:checked ~ label:after{
+opacity: 1;
+color: yellow;
+}
+
+.start{
+    width: 130px;
+}
+.he{
+    flex-basis: 18%;
+}
+.dark{
+    background-color: rgb(144, 134, 122)  !important;
+}
+.brad{
+    padding:5px;
+    border-radius: 5px;
+}
+form{
+    height: 700px;
+}
